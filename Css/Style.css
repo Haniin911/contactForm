@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffaedd, #340065);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.chat-container {
+    width: 49%;
+    max-width: 90%;
+    background: white;
+    padding: 49px;
+    border-radius: 29px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-body .form-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.chat-body {
+    margin-bottom: 15px;
+}
+
+.chat-footer {
+    text-align: center;
+}
+
+.button {
+    padding: 12px 30px;
+    border: none;
+    background-color: #cd35ff;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-footer .button:hover {
+    background-color: #000000;
+}
+
+.chat-body input[type="text"],
+.chat-body input[type="email"],
+.chat-body input[type="tel"],
+.chat-body textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.chat-body textarea {
+    resize: none;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
